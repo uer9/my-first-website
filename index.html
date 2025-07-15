@@ -84,12 +84,6 @@
       color: white;
     }
 
-    .btn.outline {
-      background: none;
-      border: 2px solid #00ccff;
-      color: #00ccff;
-    }
-
     section {
       max-width: 960px;
       margin: 40px auto;
@@ -110,19 +104,6 @@
       justify-content: center;
     }
 
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
     footer {
       background-color: #111;
       color: white;
@@ -138,6 +119,11 @@
       right: 20px;
       z-index: 999;
       transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float img {
+      width: 48px;
+      height: 48px;
     }
 
     .whatsapp-float:hover {
@@ -163,7 +149,6 @@
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="#chart">Live Chart</a>
-    <a href="#login">Login</a>
   </nav>
 </header>
 
@@ -171,8 +156,6 @@
 <section class="hero" data-aos="zoom-in">
   <h1>Welcome to Crypto Investment 💹</h1>
   <p>Smart, Secure & Scalable Crypto Solutions for Everyone</p>
-  <a href="#login" class="btn primary">Login</a>
-  <a href="#signup" class="btn outline">Sign Up</a>
 </section>
 
 <!-- LIVE CHART -->
@@ -183,38 +166,17 @@
   </div>
 </section>
 
-<!-- LOGIN SECTION -->
-<section id="login" data-aos="fade-right">
-  <h2>Login</h2>
-  <form>
-    <input type="email" placeholder="Email" required />
-    <input type="password" placeholder="Password" required />
-    <button class="btn primary" type="submit" style="width:100%;">Login</button>
-  </form>
-</section>
-
-<!-- SIGNUP SECTION -->
-<section id="signup" data-aos="fade-left">
-  <h2>Sign Up</h2>
-  <form>
-    <input type="text" placeholder="Full Name" required />
-    <input type="email" placeholder="Email" required />
-    <input type="password" placeholder="Create Password" required />
-    <button class="btn outline" type="submit" style="width:100%;">Create Account</button>
-  </form>
-</section>
-
 <!-- FOOTER -->
 <footer data-aos="fade-up">
   &copy; 2025 Crypto Investment. All rights reserved.
 </footer>
 
-<!-- WhatsApp Live Chat -->
-<a href="https://wa.me/2349067788600" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+<!-- ✅ WhatsApp Live Chat -->
+<a href="https://wa.me/2348012345678" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
 </a>
 
-<!-- AOS Script -->
+<!-- AOS Animation Script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
