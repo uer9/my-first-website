@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoVision</title>
     <style>
+.contact {
+    background-color: #0d1117;
+    padding: 40px 20px;
+    text-align: center;
+}
+.contact h2 {
+    color: #00ffcc;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact input,
+.contact textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact button {
+    background-color: #00ffcc;
+    color: #000;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.contact button:hover {
+    background-color: #00ccaa;
+}
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
@@ -96,6 +131,15 @@
         </div>
 
     </div>
+</section>
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/moqgrnvl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+    </form>
 </section>
 
 
