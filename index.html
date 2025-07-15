@@ -3,59 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>CryptoVision</title>
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #0d1117;
+            color: #ffffff;
         }
-        nav {
-            background-color: #333399;
-            padding: 15px;
+        header {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            padding: 80px 20px;
             text-align: center;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #00ffcc;
+        }
+        header p {
             font-size: 18px;
-            font-weight: bold;
+            margin-top: 10px;
+            color: #ccc;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #333399;
-        }
-        p {
-            font-size: 18px;
-            color: #444;
-        }
-        button {
+        .cta-button {
+            margin-top: 20px;
             padding: 12px 25px;
             font-size: 16px;
-            background-color: #333399;
-            color: white;
+            background-color: #00ffcc;
+            color: #000;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
-        button:hover {
-            background-color: #5555cc;
+        .cta-button:hover {
+            background-color: #00ccaa;
         }
-        img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
+        nav {
+            background-color: #1f2937;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -64,18 +61,15 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="#">Services</a>
         <a href="#">Contact</a>
     </nav>
 
-    <div class="container">
-        <h1>Welcome to My First Website!</h1>
-        <p>This is a modern, mobile-friendly website created by me.</p>
-
-        <button onclick="alert('You clicked the button!')">Click Me</button>
-
-        <br>
-        <img src="https://via.placeholder.com/300" alt="My Image">
-    </div>
+    <header>
+        <h1>Invest Smart in Crypto with CryptoVision</h1>
+        <p>Secure. Fast. Trusted Crypto Portfolio Management for Future Investors.</p>
+        <button class="cta-button">Start Now</button>
+    </header>
 
 </body>
 </html>
