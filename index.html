@@ -2,189 +2,179 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Crypto Investment</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Crypto Investment - Smart, secure, and scalable crypto services." />
-  <meta name="keywords" content="crypto, bitcoin, ethereum, blockchain, invest, trading" />
-  <meta name="author" content="Crypto Investment Team" />
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #111;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
     }
-
     header {
-      background: #111;
-      color: white;
-      text-align: center;
+      background-color: #111;
+      color: #fff;
       padding: 20px;
+      text-align: center;
     }
-
+    nav {
+      margin-top: 10px;
+    }
     nav a {
       color: #00ccff;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
-
-    .hero {
-      background: linear-gradient(135deg, #000, #111);
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      animation: fadeInUp 1s ease;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      animation: fadeInUp 1.5s ease;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
     section {
-      max-width: 960px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
+      padding: 40px 20px;
       text-align: center;
-      margin-bottom: 20px;
     }
-
-    form {
-      max-width: 500px;
-      margin: auto;
+    ul {
+      list-style: none;
+      padding: 0;
     }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 5px;
+    .crypto-section img {
+      display: block;
+      margin: 0 auto;
+    }
+    form input, form textarea, form button {
+      width: 90%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px auto;
+      display: block;
       border: 1px solid #ccc;
-    }
-
-    button {
-      width: 100%;
-      background: #00ccff;
-      color: white;
-      padding: 12px;
-      border: none;
       border-radius: 5px;
-      font-weight: bold;
+    }
+    form button {
+      background-color: #00ccff;
+      color: white;
+      border: none;
       cursor: pointer;
     }
-
     footer {
-      background: #111;
-      color: white;
+      background-color: #111;
+      color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 20px 10px;
       font-size: 14px;
     }
-
-    /* WhatsApp Chat Button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-
-    .whatsapp-float img {
-      width: 50px;
-      height: 50px;
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-
-    @media screen and (max-width: 600px) {
-      .hero h1 {
-        font-size: 1.8em;
-      }
-
-      .hero p {
-        font-size: 1em;
-      }
+    footer a {
+      color: #00ccff;
+      margin: 0 10px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header data-aos="fade-down">
-    <h1>Crypto Investment</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Welcome to Crypto Investment</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" data-aos="zoom-in">
-    <h1>Welcome to Crypto Investment 💹</h1>
-    <p>Smart, Secure & Scalable Crypto Solutions for Everyone</p>
-  </section>
+<section>
+  <h2>Who We Are</h2>
+  <p>Crypto Investment is a platform dedicated to helping investors understand and explore the cryptocurrency world.</p>
+</section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mjkobnrg" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+<section>
+  <h2>Our Services</h2>
+  <ul>
+    <li>🪙 Crypto Portfolio Setup</li>
+    <li>📊 Market Analysis & Signals</li>
+    <li>🔐 Wallet Security Guidance</li>
+  </ul>
+</section>
 
-  <!-- FOOTER -->
-  <footer data-aos="fade-up">
-    &copy; 2025 Crypto Investment. All rights reserved.
-  </footer>
+<section class="crypto-section" style="background-color: #f4f4f4;">
+  <h2 style="margin-bottom: 30px; font-size: 28px; color: #222;">Top Cryptocurrencies</h2>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+    <div>
+      <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=026" alt="Bitcoin" width="60">
+      <p style="margin-top: 10px;">Bitcoin (BTC)</p>
+    </div>
+    <div>
+      <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=026" alt="Ethereum" width="60">
+      <p style="margin-top: 10px;">Ethereum (ETH)</p>
+    </div>
+    <div>
+      <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=026" alt="BNB" width="60">
+      <p style="margin-top: 10px;">BNB</p>
+    </div>
+    <div>
+      <img src="https://cryptologos.cc/logos/solana-sol-logo.png?v=026" alt="Solana" width="60">
+      <p style="margin-top: 10px;">Solana (SOL)</p>
+    </div>
+  </div>
+</section>
 
-  <!-- WHATSAPP LIVE CHAT BUTTON -->
-  <a href="https://wa.me/2349067788600" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat">
-  </a>
+<section id="live-prices" style="padding: 40px 20px; text-align: center; background-color: #fff;">
+  <h2 style="font-size: 26px; color: #222;">Live Crypto Prices</h2>
+  <div id="prices" style="margin-top: 20px; font-size: 18px; color: #111;"></div>
+</section>
 
-  <!-- AOS Animation Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<script>
+  async function fetchPrices() {
+    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,solana&vs_currencies=usd';
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      document.getElementById('prices').innerHTML = `
+        <p>🟠 Bitcoin (BTC): $${data.bitcoin.usd}</p>
+        <p>🔷 Ethereum (ETH): $${data.ethereum.usd}</p>
+        <p>🟡 BNB: $${data.binancecoin.usd}</p>
+        <p>🟣 Solana (SOL): $${data.solana.usd}</p>
+      `;
+    } catch (error) {
+      document.getElementById('prices').innerText = '⚠ Failed to load live prices.';
+    }
+  }
+  fetchPrices();
+</script>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mjkobnrg" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<section id="newsletter" style="background-color: #f1f1f1; padding: 40px 20px; text-align: center;">
+  <h2 style="color: #111;">📧 Join Our Crypto Newsletter</h2>
+  <p style="max-width: 500px; margin: 10px auto; color: #444;">
+    Stay ahead with market updates, crypto investment tips, and early access to tools we launch.
+  </p>
+  <form action="https://formspree.io/f/mjkobnrg" method="POST" style="margin-top: 20px;">
+    <input type="email" name="email" placeholder="Enter your email" required style="padding: 10px; width: 250px; border: 1px solid #ccc; border-radius: 5px;" />
+    <button type="submit" style="padding: 10px 20px; background-color: #00ccff; color: #fff; border: none; border-radius: 5px; margin-left: 10px;">Subscribe</button>
+  </form>
+</section>
+
+<!-- WhatsApp Floating Chat -->
+<a href="https://wa.me/2349067788600" target="_blank" 
+   style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="Chat with us on WhatsApp" 
+       style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
+</a>
+
+<footer>
+  <p>&copy; 2025 Crypto Investment | All rights reserved.</p>
+  <div>
+    <a href="https://wa.me/2349067788600">WhatsApp</a>
+    <a href="mailto:fxkd226@email.com">Email</a>
+    <a href="https://twitter.com/yourhandle">Twitter</a>
+  </div>
+</footer>
+
 </body>
 </html>
