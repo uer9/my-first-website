@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crypto Investment</title>
 
-  <!-- SEO -->
+  <!-- SEO Meta Tags -->
   <meta name="description" content="Crypto Investment - Smart, secure, and scalable crypto services." />
   <meta name="keywords" content="crypto, bitcoin, ethereum, blockchain, invest, trading" />
   <meta name="author" content="Crypto Investment Team" />
 
-  <!-- AOS Animation Library -->
+  <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
@@ -19,69 +19,53 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
       color: #111;
     }
 
     header {
-      background-color: #111;
+      background: #111;
       color: white;
-      padding: 20px 10px;
       text-align: center;
+      padding: 20px;
     }
 
     nav a {
       color: #00ccff;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
 
     .hero {
       background: linear-gradient(135deg, #000, #111);
       color: white;
-      padding: 100px 20px;
       text-align: center;
+      padding: 100px 20px;
     }
 
     .hero h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
-      animation: fadeInUp 1s ease forwards;
+      animation: fadeInUp 1s ease;
     }
 
     .hero p {
       font-size: 1.2em;
-      margin-bottom: 20px;
-      animation: fadeInUp 1.5s ease forwards;
+      animation: fadeInUp 1.5s ease;
     }
 
     @keyframes fadeInUp {
-      0% {
+      from {
         opacity: 0;
         transform: translateY(30px);
       }
-      100% {
+      to {
         opacity: 1;
         transform: translateY(0);
       }
-    }
-
-    .btn {
-      padding: 12px 20px;
-      margin: 10px 5px;
-      border-radius: 5px;
-      border: none;
-      text-decoration: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .btn.primary {
-      background-color: #00ccff;
-      color: white;
     }
 
     section {
@@ -90,40 +74,57 @@
       background: white;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     h2 {
       text-align: center;
-      color: #111;
+      margin-bottom: 20px;
     }
 
-    .chart-wrapper {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      background: #00ccff;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     footer {
-      background-color: #111;
+      background: #111;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       font-size: 14px;
     }
 
-    /* WhatsApp Button */
+    /* WhatsApp Chat Button */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
       z-index: 999;
-      transition: transform 0.3s ease;
     }
 
     .whatsapp-float img {
-      width: 48px;
-      height: 48px;
+      width: 50px;
+      height: 50px;
     }
 
     .whatsapp-float:hover {
@@ -134,6 +135,7 @@
       .hero h1 {
         font-size: 1.8em;
       }
+
       .hero p {
         font-size: 1em;
       }
@@ -142,45 +144,47 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<header data-aos="fade-down">
-  <h1>Crypto Investment</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="#chart">Live Chart</a>
-  </nav>
-</header>
+  <!-- HEADER -->
+  <header data-aos="fade-down">
+    <h1>Crypto Investment</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<!-- HERO SECTION -->
-<section class="hero" data-aos="zoom-in">
-  <h1>Welcome to Crypto Investment 💹</h1>
-  <p>Smart, Secure & Scalable Crypto Solutions for Everyone</p>
-</section>
+  <!-- HERO SECTION -->
+  <section class="hero" data-aos="zoom-in">
+    <h1>Welcome to Crypto Investment 💹</h1>
+    <p>Smart, Secure & Scalable Crypto Solutions for Everyone</p>
+  </section>
 
-<!-- LIVE CHART -->
-<section id="chart" data-aos="fade-up">
-  <h2>Live Bitcoin Price Chart</h2>
-  <div class="chart-wrapper">
-    <iframe src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.html?coin_id=bitcoin&currency=usd" width="100%" height="300" frameborder="0" scrolling="auto"></iframe>
-  </div>
-</section>
+  <!-- CONTACT SECTION -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mjkobnrg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-<!-- FOOTER -->
-<footer data-aos="fade-up">
-  &copy; 2025 Crypto Investment. All rights reserved.
-</footer>
+  <!-- FOOTER -->
+  <footer data-aos="fade-up">
+    &copy; 2025 Crypto Investment. All rights reserved.
+  </footer>
 
-<!-- ✅ WhatsApp Live Chat -->
-<a href="https://wa.me/2348012345678" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
-</a>
+  <!-- WHATSAPP LIVE CHAT BUTTON -->
+  <a href="https://wa.me/2349067788600" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+  </a>
 
-<!-- AOS Animation Script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
