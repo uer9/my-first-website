@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CryptoInvestment | Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Investment</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -30,6 +30,10 @@
     section {
       padding: 40px 20px;
       text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
     }
     .crypto-section img {
       display: block;
@@ -67,7 +71,7 @@
 <body>
 
 <header>
-  <h1>Welcome to CryptoInvest</h1>
+  <h1>Welcome to Crypto Investment</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -76,12 +80,12 @@
 
 <section>
   <h2>Who We Are</h2>
-  <p>CryptoInvest is a platform dedicated to helping investors understand and explore the cryptocurrency world.</p>
+  <p>Crypto Investment is a platform dedicated to helping investors understand and explore the cryptocurrency world.</p>
 </section>
 
 <section>
   <h2>Our Services</h2>
-  <ul style="list-style: none; padding: 0;">
+  <ul>
     <li>🪙 Crypto Portfolio Setup</li>
     <li>📊 Market Analysis & Signals</li>
     <li>🔐 Wallet Security Guidance</li>
@@ -110,6 +114,30 @@
   </div>
 </section>
 
+<section id="live-prices" style="padding: 40px 20px; text-align: center; background-color: #fff;">
+  <h2 style="font-size: 26px; color: #222;">Live Crypto Prices</h2>
+  <div id="prices" style="margin-top: 20px; font-size: 18px; color: #111;"></div>
+</section>
+
+<script>
+  async function fetchPrices() {
+    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,solana&vs_currencies=usd';
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      document.getElementById('prices').innerHTML = `
+        <p>🟠 Bitcoin (BTC): $${data.bitcoin.usd}</p>
+        <p>🔷 Ethereum (ETH): $${data.ethereum.usd}</p>
+        <p>🟡 BNB: $${data.binancecoin.usd}</p>
+        <p>🟣 Solana (SOL): $${data.solana.usd}</p>
+      `;
+    } catch (error) {
+      document.getElementById('prices').innerText = '⚠ Failed to load live prices.';
+    }
+  }
+  fetchPrices();
+</script>
+
 <section class="contact">
   <h2>Contact Us</h2>
   <form action="https://formspree.io/f/mjkobnrg" method="POST">
@@ -121,7 +149,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 CryptoInvest | All rights reserved.</p>
+  <p>&copy; 2025 Crypto Investment | All rights reserved.</p>
   <div>
     <a href="https://wa.me/2349067788600">WhatsApp</a>
     <a href="mailto:fxkd226@email.com">Email</a>
